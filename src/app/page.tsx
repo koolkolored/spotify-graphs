@@ -1,3 +1,5 @@
+import type { AppProps } from 'next/app';
+import { Analytics } from '@vercel/analytics/react';
 import Image from 'next/image'
 import styles from './page.module.css'
 
@@ -90,6 +92,7 @@ export default function Home() {
           </p>
         </a>
       </div>
+      <Analytics />
     </main>
   )
 }
